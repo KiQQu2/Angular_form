@@ -39,9 +39,9 @@
 
 
 
-
-  <button type="submit" (click)="submitData()" class="formButton" [disabled]="!myForm.valid">Zapisz</button>
   <small *ngIf="myForm.invalid">Pole z gwaizdką są wymagane</small>
+  <button type="submit" (click)="submitData()" class="formButton" [disabled]="!myForm.valid">Zapisz</button>
+
 
 </form>
 
