@@ -10,34 +10,34 @@
 
 <form class="form" [formGroup]="myForm">
 
-  <label for="regCountry">Kraj rejestracji podatkowej podmiotu</label>
-  <input formControlName="regCountry" id="regCountry" type="text">
-  <label for="nip">NIP</label>
-  <input formControlName="nip" id="nip" type="text">
+  <label for="regCountry">Kraj rejestracji podatkowej podmiotu<span class="fa-asterisk">*</span></label>
+  <input formControlName="regCountry" id="regCountry" type="text" placeholder="Wybierz lub wpisz">
+  <label for="nip">NIP<span class="fa-asterisk">*</span></label>
+  <input formControlName="nip" id="nip" type="text" placeholder="Wpisz NIP">
 
 <!--  <small *ngIf="myForm.get('name').invalid">Serio masz tak na imię?</small>-->
   <button class="form-getData">Pobierz dane</button>
 
-  <label for="name">Nazwa podmiotu / Imię i nazwisko</label>
-  <input formControlName="name" class="form-control"id="name" type="text">
+  <label for="name">Nazwa podmiotu / Imię i nazwisko<span class="fa-asterisk">*</span></label>
+  <input formControlName="name" class="form-control"id="name" type="text" placeholder="Wpisz nazwę">
 <!--  <span *ngIf="myForm.get('name').touched && myForm.get('name')"></span>-->
 <!--    <small *ngIf="myForm.get('name').invalid">Serio masz tak na imię?</small>-->
-  <label for="region">Województwo</label>
-  <input formControlName="region" id="region"type="text">
-  <label for="city">Miejscowość</label>
-  <input formControlName="city" id="city"type="text">
-  <label for="street">Ulica</label>
-  <input formControlName="street" id="street"type="text">
-  <label for="streetNumber">Nr domu</label>
-  <input formControlName="streetNumber" id="streetNumber"type="text">
+  <label for="region">Województwo<span class="fa-asterisk">*</span></label>
+  <input formControlName="region" id="region"type="text" placeholder="Wybierz lub wyszukaj">
+  <label for="city">Miejscowość<span class="fa-asterisk">*</span></label>
+  <input formControlName="city" id="city"type="text" placeholder="Wpisz nazwę">
+  <label for="street">Ulica<span class="fa-asterisk">*</span></label>
+  <input formControlName="street" id="street"type="text" placeholder="Wpisz nazwę">
+  <label for="streetNumber">Nr domu<span class="fa-asterisk">*</span></label>
+  <input formControlName="streetNumber" id="streetNumber"type="text" placeholder="Podaj numer">
   <label for="flatNumber">Nr lokalu <span class="regular">(opcjonalnie)</span></label>
-  <input formControlName="flatNumber" id="flatNumber"type="text">
-  <label for="zipCode">Kod pocztowy</label>
-  <input formControlName="zipCode" id="zipCode"type="text">
-  <label for="email">Email</label>
-  <input formControlName="email" id="email"type="text">
-  <label for="phone">Numer telefonu</label>
-  <input formControlName="phone" id="phone"type="text">
+  <input formControlName="flatNumber" id="flatNumber"type="text" placeholder="Podaj numer">
+  <label for="zipCode">Kod pocztowy<span class="fa-asterisk">*</span></label>
+  <input formControlName="zipCode" id="zipCode"type="text" placeholder="Podaj numer">
+  <label for="email">Email <span class="opcional">(opcjonalnie)</span></label>
+  <input formControlName="email" id="email"type="text" placeholder="Wpisz adres email">
+  <label for="phone">Numer telefonu <span class="opcional">(opcjonalnie)</span></label>
+  <input formControlName="phone" id="phone"type="text" placeholder="Wpisz numer telefonu">
 
 
 
