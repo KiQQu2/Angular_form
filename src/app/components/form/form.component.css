@@ -82,6 +82,26 @@ input{
   background-color: #0052A5;
 }
 
+.fa-asterisk{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AD0000;
+  margin: 0px 4px;
+}
+.opcional{
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #343A40;
+  margin: 0px 4px;
+}
 input.ng-invalid.ng-touched{
   border:1px solid red;
 }
