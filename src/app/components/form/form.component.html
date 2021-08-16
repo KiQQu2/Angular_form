@@ -1,0 +1,57 @@
+<!--<form class="simpleForm"   #simpleForm="ngForm" (ngSubmit)="test(simpleForm.value)">-->
+<!--  <input type="text" ngModel name="user" placeholder="wpisz swoje imię">-->
+<!--  <br>-->
+<!--  <input type="number" ngModel name="age" placeholder="wpisz swoj wiek">-->
+<!--  <br>-->
+<!--  <input type="email" ngModel name="email" placeholder="wpisz swoj e-mail">-->
+<!--  <button >Click me</button>-->
+<!--</form>-->
+<div class="form-container">
+
+<form class="form" [formGroup]="myForm">
+
+  <label for="regCountry">Kraj rejestracji podatkowej podmiotu</label>
+  <input formControlName="regCountry" id="regCountry" type="text">
+  <label for="nip">NIP</label>
+  <input formControlName="nip" id="nip" type="text">
+
+<!--  <small *ngIf="myForm.get('name').invalid">Serio masz tak na imię?</small>-->
+  <button class="form-getData">Pobierz dane</button>
+
+  <label for="name">Nazwa podmiotu / Imię i nazwisko</label>
+  <input formControlName="name" class="form-control"id="name" type="text">
+<!--  <span *ngIf="myForm.get('name').touched && myForm.get('name')"></span>-->
+<!--    <small *ngIf="myForm.get('name').invalid">Serio masz tak na imię?</small>-->
+  <label for="region">Województwo</label>
+  <input formControlName="region" id="region"type="text">
+  <label for="city">Miejscowość</label>
+  <input formControlName="city" id="city"type="text">
+  <label for="street">Ulica</label>
+  <input formControlName="street" id="street"type="text">
+  <label for="streetNumber">Nr domu</label>
+  <input formControlName="streetNumber" id="streetNumber"type="text">
+  <label for="flatNumber">Nr lokalu <span class="regular">(opcjonalnie)</span></label>
+  <input formControlName="flatNumber" id="flatNumber"type="text">
+  <label for="zipCode">Kod pocztowy</label>
+  <input formControlName="zipCode" id="zipCode"type="text">
+  <label for="email">Email</label>
+  <input formControlName="email" id="email"type="text">
+  <label for="phone">Numer telefonu</label>
+  <input formControlName="phone" id="phone"type="text">
+
+
+
+
+
+
+
+
+
+
+
+
+  <button type="submit" (click)="submitData()" class="formButton" [disabled]="!myForm.valid">Zapisz</button>
+</form>
+
+</div>
+<!--Value:{{myForm.value | json}}-->

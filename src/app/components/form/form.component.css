@@ -1,0 +1,93 @@
+.form-container{
+  display: flex;
+  width: 328px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 16px 16px 16px;
+
+}
+
+label{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #343A40;
+}
+input{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 8px 8px 16px;
+
+  height: 40px;
+
+  /* color / surface / white */
+  background: #FFFFFF;
+
+  border: 1px solid #737373;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  margin: 8px 0px;
+}
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+
+}
+.form-getData{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0052A5;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  margin: 40px 0 24px;
+  border: 1px solid #0052A5;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+.formButton{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 152px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  margin: 48px 0 24px 0;
+  border: 1px solid #0052A5;
+  border-radius: 4px;
+  background-color: #0052A5;
+}
+
+input.ng-invalid.ng-touched{
+  border:1px solid red;
+}
+input.ng-valid.ng-touched{
+  border:1px solid green;
+}
+
+
+

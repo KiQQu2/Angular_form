@@ -1,0 +1,90 @@
+.header-container{
+  display: flex;
+  width: 360px;
+  height: 72px;
+ flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DC0032;
+}
+
+
+.header-menu-logo{
+  display: flex;
+  position: static;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  /*width: 157px;*/
+  height: 40px;
+  top: 16px;
+  left: 16px;
+
+
+}
+.header-mobile-menu{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  margin: 16px;
+}
+.fa-bars{
+  position: absolute;
+  width: 18px;
+  height: 12px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
+.logo{
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-p{
+  /*font-family: Montserrat;*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0 0 0 2px;
+
+}
+.logo-eagle{
+  margin: 0px 8px;
+}
+.header-user-icon{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  /*top: 20px;*/
+  left: 312px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  background-color: #BB002A;
+  margin: 20px 16px 20px 0
+
+}
+
+.user-alt{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: #FFFFFF;
+}
+
+

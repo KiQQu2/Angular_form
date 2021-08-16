@@ -1,0 +1,45 @@
+.header-bottom-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin: 16px;
+}
+
+.header-bottom-p{
+    /*font-family: Montserrat;*/
+    text-align: left;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #343A40;
+
+}
+.header-bottom-back{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 82px;
+    height: 24px;
+    left: 15px;
+    top: 265px;
+}
+.header-bottom-back-p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+
+
+    margin: 0px 4px;
+    color: #0052A5;
+}
+.fa-arrow-left{
+    font-size: 14px;
+    color: #0052A5;
+}
