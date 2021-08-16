@@ -110,4 +110,14 @@ input.ng-valid.ng-touched{
 }
 
 
+::placeholder{
 
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #737373;
+  margin: 0px 10px;
+}
