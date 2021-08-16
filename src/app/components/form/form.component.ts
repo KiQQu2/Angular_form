@@ -87,7 +87,6 @@ export class FormComponent implements OnInit {
   // }
 
   submitData(){
-
     console.log(this.myForm.value)
     // this.myForm.reset();
   };
