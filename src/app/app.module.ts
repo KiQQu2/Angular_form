@@ -12,6 +12,7 @@ import { FormComponent } from './components/form/form.component';
 import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderBottomComponent } from './components/header-bottom/header-bottom.component';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -29,6 +30,7 @@ import { HeaderBottomComponent } from './components/header-bottom/header-bottom.
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

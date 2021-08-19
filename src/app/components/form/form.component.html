@@ -1,49 +1,67 @@
 
 <div class="form-container">
-
 <form class="form" [formGroup]="myForm">
 
-  <label for="regCountry">Kraj rejestracji podatkowej podmiotu<span class="fa-asterisk">*</span></label>
-  <input formControlName="regCountry" id="regCountry" type="text" placeholder="Wybierz lub wpisz">
+  <label  for="regCountry">Kraj rejestracji podatkowej podmiotu<span class="fa-asterisk">*</span></label>
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Wybierz lub wpisz</mat-label>
+  <input  formControlName="regCountry" id="regCountry" type="text" matInput>
+  </mat-form-field>
   <label for="nip">NIP<span class="fa-asterisk">*</span></label>
-  <input formControlName="nip" id="nip" type="text" placeholder="Wpisz NIP">
-
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Wpisz NIP</mat-label>
+  <input formControlName="nip" id="nip" type="text" matInput>
+  </mat-form-field>
   <button class="form-getData">Pobierz dane</button>
-
   <label for="name">Nazwa podmiotu / Imię i nazwisko<span class="fa-asterisk">*</span></label>
-  <input formControlName="name" class="form-control"id="name" type="text" placeholder="Wpisz nazwę">
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Wpisz nazwę</mat-label>
+  <input formControlName="name" class="form-control"id="name" type="text" matInput>
+  </mat-form-field>
   <label for="region">Województwo<span class="fa-asterisk">*</span></label>
-  <input formControlName="region" id="region"type="text" placeholder="Wybierz lub wyszukaj">
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Wybierz lub wyszukaj</mat-label>
+  <input formControlName="region" id="region"type="text" matInput>
+  </mat-form-field>
   <label for="city">Miejscowość<span class="fa-asterisk">*</span></label>
-  <input formControlName="city" id="city"type="text" placeholder="Wpisz nazwę">
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Wpisz nazwę</mat-label>
+  <input formControlName="city" id="city"type="text" matInput>
+  </mat-form-field>
   <label for="street">Ulica<span class="fa-asterisk">*</span></label>
-  <input formControlName="street" id="street"type="text" placeholder="Wpisz nazwę">
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Wpisz nazwę</mat-label>
+  <input formControlName="street" id="street"type="text" matInput>
+  </mat-form-field>
   <label for="streetNumber">Nr domu<span class="fa-asterisk">*</span></label>
-  <input formControlName="streetNumber" id="streetNumber"type="text" placeholder="Podaj numer">
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Podaj numer</mat-label>
+  <input formControlName="streetNumber" id="streetNumber"type="text" matInput>
+  </mat-form-field>
   <label for="flatNumber">Nr lokalu <span class="regular">(opcjonalnie)</span></label>
-  <input formControlName="flatNumber" id="flatNumber"type="text" placeholder="Podaj numer">
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Podaj numer</mat-label>
+  <input formControlName="flatNumber" id="flatNumber"type="text" matInput>
+  </mat-form-field>
   <label for="zipCode">Kod pocztowy<span class="fa-asterisk">*</span></label>
-  <input formControlName="zipCode" id="zipCode"type="text" placeholder="Podaj numer">
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Podaj numer</mat-label>
+  <input formControlName="zipCode" id="zipCode"type="text" matInput>
+  </mat-form-field>
   <label for="email">Email <span class="opcional">(opcjonalnie)</span></label>
-  <input formControlName="email" id="email"type="text" placeholder="Wpisz adres email">
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Wpisz adres email</mat-label>
+  <input formControlName="email" id="email"type="text" matInput>
+  </mat-form-field>
   <label for="phone">Numer telefonu <span class="opcional">(opcjonalnie)</span></label>
-  <input formControlName="phone" id="phone"type="text" placeholder="Wpisz numer telefonu">
-
-
-
-
-
-
-
-
-
-
-
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Wpisz numer telefonu</mat-label>
+  <input formControlName="phone" id="phone"type="text" matInput>
+  </mat-form-field>
   <small *ngIf="myForm.invalid">Pole z gwaizdką są wymagane</small>
   <button type="submit" (click)="submitData()" class="formButton" [disabled]="!myForm.valid">Zapisz</button>
 
-
 </form>
-
 </div>
-<!--Value:{{myForm.value | json}}-->
+
+

@@ -7,7 +7,14 @@
   margin: 20px 16px 16px 16px;
 
 }
-
+.mat-form-field-legacy{
+  position: relative;
+  top:0;
+  right: 0;
+}
+.mat-form{
+  width: 100%;
+}
 label{
   font-family: Open Sans;
   font-style: normal;
@@ -17,7 +24,7 @@ label{
 
   color: #343A40;
 }
-input{
+mat-input{
   width: 100%;
 
   display: flex;
@@ -27,17 +34,18 @@ input{
 
   height: 40px;
 
-  /* color / surface / white */
+
   background: #FFFFFF;
 
-  border: 1px solid #737373;
+
   box-sizing: border-box;
-  border-radius: 4px;
+
 
   margin: 8px 0px;
 }
 .form{
   width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -102,13 +110,6 @@ input{
   color: #343A40;
   margin: 0px 4px;
 }
-input.ng-invalid.ng-touched{
-  border:1px solid red;
-}
-input.ng-valid.ng-touched{
-  border:1px solid green;
-}
-
 
 ::placeholder{
 
